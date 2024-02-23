@@ -16,9 +16,11 @@ class MinizipNgConan(ConanFile):
         relative = "3rdparty/minizip-ng/"
 
         # headers
-        self.copy("zip.h", src=base, dst=relative)
-        self.copy("unzip.h", src=base, dst=relative)
         self.copy("ioapi.h", src=base, dst=relative)
+        self.copy("mz.h", src=base, dst=relative)
+        self.copy("mz_compat.h", src=base, dst=relative)
+        self.copy("unzip.h", src=base, dst=relative)
+        self.copy("zip.h", src=base, dst=relative)
 
         # libraries
         output = "output/" + str(self.settings.platform_architecture_target) + "/staticlib"
