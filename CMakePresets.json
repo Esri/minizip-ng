@@ -1,0 +1,25 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "runtimecore",
+      "cacheVariables": {
+        "MZ_COMPAT": "ON",
+        "MZ_ZLIB": "ON",
+        "MZ_BZIP2": "OFF",
+        "MZ_LZMA": "OFF",
+        "MZ_ZSTD": "OFF",
+        "MZ_LIBCOMP": "OFF",
+        "MZ_FETCH_LIBS": "OFF",
+        "MZ_PKCRYPT": "OFF",
+        "MZ_WZAES": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "runtimecore",
+      "configurePreset": "runtimecore"
+    }
+  ]
+}
